@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Where we eating at?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mx-auto mt-8 text-center">
+        
+        <h1 class="text-4xl font-bold">Where we eating at?</h1>
+        <input type="text" id="locationInput" placeholder="Enter city or town">
+        <button id="pickRestaurant" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Pick a Restaurant!
+        </button>
+        
+        <div id="restaurantResult" class="mt-8 text-xl font-semibold hidden">
+            <p>Selected Restaurant: <span id="restaurantName"></span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
